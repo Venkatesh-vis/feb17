@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .p {
+            display: grid;
+            grid-template-columns: (1, 20px);
+            grid-template-rows: repeat(15, 35px);
+            row-gap: 10px;
+            width: 400px;
+        }
+        .ch{
+            font-weight: bold;
+        }
+
+        .ch:nth-child(2n) {
+            background-color: grey;
+            color: violet;
+        }
+
+        .ch:nth-child(2n+1) {
+            background-color: darkgray;
+            color: wheat;
+        }
+        .one:checked~img{
+            transform: none;
+        }
+        .two:active~img{
+            transform: rotate(10deg);
+        }
+        .three:active~img{
+            transform :rotate(45deg);
+        }
+        .four:active~img{
+            transform :rotateX(100deg);
+        }
+        .five:active~img{
+            transform :rotateY(45deg);
+        }
+        .six:active~img{
+            transform :rotateY(80deg)
+        }
+        .seven:active~img{
+            transform :skew(20deg,20deg);
+        }
+        .eight:active~img{
+            transform :skew(20deg,20deg);
+        }
+        .nine:active~img{
+            transform :skew(30deg,30deg);
+        }
+        .ten:active~img{
+            transform :skewX(30deg);
+        }
+        .eleven:active~img{
+            transform :skewy(30deg);
+        }
+        .twele:active~img{
+            transform :translate(20px,10px);
+        }
+        .thirteen:active~img{
+            transform :scale(2,2); 
+        }
+        .fourteen:active~img{
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+        }
+        .fifteen:active~img{
+            transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p">
+        <div class="ch one">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :none;</label>
+        </div>
+        <div class="ch two">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :rotate(10deg);</label>
+        </div>
+        <div class="ch three">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :rotate(45deg);</label>
+        </div>
+        <div class="ch four">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :rotateX(100deg);</label>
+        </div>
+        <div class="ch five">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :rotateY(45deg);</label>
+        </div>
+        <div class="ch six">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :rotateY(80deg)</label>
+        </div>
+        <div class="ch seven">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :skew(20deg,20deg);</label>
+        </div>
+        <div class="ch eight">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :skew(20deg,20deg);</label>
+        </div>
+        <div class="ch nine">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :skew(30deg,30deg);</label>
+        </div>
+        <div class="ch ten">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :skewX(30deg);</label>
+        </div>
+        <div class="ch eleven">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :skewy(30deg);</label>
+        </div>
+        <div class="ch twele">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :translate(20px,10px);</label>
+        </div>
+        <div class="ch thirteen">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform :scale(2,2);</label>
+        </div>
+        <div class="ch fourteen">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform: matrix(0.866,0.7,-0.8,0.866,0,0);</label>
+        </div>
+        <div class="ch fifteen">
+            <input type="radio" name="none" id="none">
+            <label for="none">transform: matrix(0.586,0.8,-0.8,0.586,40,30);</label>
+        </div>
+        <img style="position: absolute; top: 50px; left: 700px;" src="./Assets/nature1.jpg" alt="" height="200" width="200">
+    </div>
+
+
+</body>
+
+</html>
